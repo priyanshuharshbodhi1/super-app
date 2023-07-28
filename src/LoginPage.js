@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./LoginPage.scss";
 import LoginImage from "./images/login.svg";
+// import { useHistory } from "react-router-dom";
 
 function LoginPage() {
   const [name, setName] = useState("");
@@ -30,13 +31,17 @@ function LoginPage() {
   //   setShareData(!shareData);
   // };
 
+  // const history = useHistory();
+
   const handleSubmit = (e) => {
+    
     e.preventDefault();
     if (
       name.length === 0 ||
       username.length === 0 ||
       email.length === 0 ||
-      mobile.length === 0
+      mobile.length === 0 ||
+      shareData === false
     ) {
       setError(true);
     } else {
@@ -49,8 +54,10 @@ function LoginPage() {
         shareData: shareData,
       };
 
+
       localStorage.setItem("formData", JSON.stringify(formData));
-    }
+    }       
+    // history.push('/Choices');
   };
 
   return (
@@ -118,14 +125,14 @@ function LoginPage() {
               <input
                 type="checkbox"
                 checked={shareData}
-                onChange={(e) => setShareData(e.target.value)}
+                onChange={(e) => setShareData(e.target.checked)}
               />
               <label htmlFor="shareData">
                 Share my registration data with Super App
               </label>
             </div>
             {/* <label className="empty-lable">Please tick the Checkbox</label> */}
-            <button type="submit">Sign Up</button>
+            <button type="submit" >Sign Up</button>
             <div className="terms-privacy-container">
               <p>
                 By signing up, you agree to our{" "}
