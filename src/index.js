@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import LoginPage from "./LoginPage.js";
-import SelectCategory from "./SelectCategory.js";
+import LoginPage from "./LoginPage.jsx";
+import SelectCategory from "./SelectCategory.jsx";
 import './index.css';
 
 const router = createBrowserRouter([

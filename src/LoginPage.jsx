@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./LoginPage.scss";
 import LoginImage from "./images/login.svg";
-// import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function LoginPage() {
   const [name, setName] = useState("");
@@ -11,28 +11,7 @@ function LoginPage() {
   const [shareData, setShareData] = useState(false);
   const [error, setError] = useState(false);
 
-  // const handleNameChange = (event) => {
-  //   setName(event.target.value);
-  // };
-
-  // const handleUsernameChange = (event) => {
-  //   setUsername(event.target.value);
-  // };
-
-  // const handleEmailChange = (event) => {
-  //   setEmail(event.target.value);
-  // };
-
-  // const handleMobileChange = (event) => {
-  //   setMobile(event.target.value);
-  // };
-
-  // const handleShareDataChange = () => {
-  //   setShareData(!shareData);
-  // };
-
-  // const history = useHistory();
-
+  const navigate = useNavigate();
   const handleSubmit = (e) => {
     
     e.preventDefault();
@@ -53,12 +32,15 @@ function LoginPage() {
         mobile: mobile,
         shareData: shareData,
       };
-
-
+      
       localStorage.setItem("formData", JSON.stringify(formData));
-    }       
-    // history.push('/Choices');
+    };
+
+    navigate('/selectcategory'); 
   };
+
+  
+
 
   return (
     <>
