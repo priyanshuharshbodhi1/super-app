@@ -19,6 +19,10 @@ function SelectCategory() {
   const nextPageButton = () => {
     if (selectedCategories.length >= 3) {
       navigate("/notespage");
+      localStorage.setItem(
+        "selectedCategories",
+        JSON.stringify(selectedCategories)
+      );
     } else {
       document.querySelector(".min3-alert").style.display = "block";
     }
@@ -56,7 +60,7 @@ function SelectCategory() {
               </span>
             ))}
           </div>
-          <div className="min3-alert"  style={{ display: "none" }}>
+          <div className="min3-alert" style={{ display: "none" }}>
             <img src={min3} alt="" />
             Minimum 3 categories required.
           </div>
