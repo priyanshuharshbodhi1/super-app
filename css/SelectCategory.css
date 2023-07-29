@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "DM Sans";
+  src: url("./fonts/DMSans-VariableFont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.select-category {
+  margin: 2rem;
+}
+
+.select-category {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+.select-category .category-selected {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+}
+.select-category .category-cards {
+  width: 40vw;
+}
+.select-category .category-cards .grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+  margin: 0;
+  gap: 2.5rem;
+}
+.select-category .category-cards .card {
+  aspect-ratio: 1/1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.select-category .category-cards .card1 {
+  border-radius: 0.55rem;
+  border: 0.2rem solid #11b800;
+  background: #ff5209;
+}
+.select-category .category-cards .card2 {
+  border-radius: 0.55rem;
+  border: 0.2rem solid #11b800;
+  background: #d7a4ff;
+}
+.select-category .category-cards .card3 {
+  border-radius: 0.55rem;
+  border: 0.2rem solid #11b800;
+  background: #148a08;
+}
+.select-category .category-cards .card4 {
+  border-radius: 0.55rem;
+  border: 0.2rem solid #11b800;
+  background: #84c2ff;
+}
+.select-category .category-cards .card5 {
+  border-radius: 0.55rem;
+  border: 0.2rem solid #11b800;
+  background: #902500;
+}
+.select-category .category-cards .card6 {
+  border-radius: 0.55rem;
+  border: 0.2rem solid #11b800;
+  background: #7358ff;
+}
+.select-category .category-cards .card7 {
+  border-radius: 0.55rem;
+  border: 0.2rem solid #11b800;
+  background: #ff4ade;
+}
+.select-category .category-cards .card8 {
+  border-radius: 0.55rem;
+  border: 0.2rem solid #11b800;
+  background: #e61e32;
+}
+.select-category .category-cards .card9 {
+  border-radius: 0.55rem;
+  border: 0.2rem solid #11b800;
+  background: #6cd061;
+}
+.select-category .category-cards .title {
+  color: #fff;
+  font-family: DM Sans, sans-serif;
+  font-size: 1.55rem;
+  font-style: normal;
+  font-weight: 550;
+  line-height: normal;
+}
+.select-category .category-cards img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}/*# sourceMappingURL=SelectCategory.css.map */

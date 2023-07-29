@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@font-face {
+  font-family: "VT323";
+  src: url("../assets/fonts/VT323-Regular.ttf") format("truetype");
+}
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.login-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #000000;
+}
+.login-page .image-container {
+  flex: 1;
+  position: relative;
+}
+.login-page .image-container img {
+  position: relative;
+  max-width: 100%;
+  min-width: 25rem;
+  object-fit: cover;
+}
+.login-page .image-container p {
+  position: absolute;
+  color: aliceblue;
+  top: 70%;
+  left: 7%;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 3.2705rem;
+  letter-spacing: 0.06875rem;
+}
+.login-page .form-container {
+  flex: 1;
+  background-color: #000000;
+}
+.login-page .form-container form {
+  display: flex;
+  flex-direction: column;
+  max-width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #000000;
+}
+.login-page .form-container form h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #2ce72f;
+  font-family: VT323, sans-serif;
+  font-size: 3.5rem;
+}
+.login-page .form-container form h4 {
+  text-align: center;
+  margin-bottom: 3.5rem;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+}
+.login-page .form-container form input {
+  margin-bottom: 1rem;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #464545;
+  color: #c2c1c1;
+  font-size: 0.9rem;
+}
+.login-page .form-container form label {
+  color: rgb(252, 75, 75);
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+.login-page .form-container form .checkbox-container {
+  margin-bottom: 10px;
+}
+.login-page .form-container form .checkbox-container input[type=checkbox] {
+  margin-right: 0.5rem;
+}
+.login-page .form-container form .checkbox-container input[type=checkbox]:not(:checked) {
+  border: 1rem solid red;
+}
+.login-page .form-container form .checkbox-container label {
+  color: #7C7C7C;
+}
+.login-page .form-container form button {
+  padding: 10px 20px;
+  background-color: #2ce72f;
+  color: white;
+  border: none;
+  border-radius: 1.75rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.login-page .form-container form button:active {
+  transform: scale(0.98);
+}
+.login-page .form-container form button:hover {
+  background-color: #4dac4d;
+}
+.login-page .form-container .terms-privacy-container {
+  margin-top: 20px;
+  font-size: 14px;
+}
+.login-page .form-container .terms-privacy-container p {
+  margin-bottom: 1rem;
+  color: #7C7C7C;
+}
+.login-page .form-container .terms-privacy-container a {
+  color: #72DB73;
+}
+
+a {
+  text-decoration: none;
+}/*# sourceMappingURL=LoginPage.css.map */
