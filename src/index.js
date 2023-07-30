@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import LoginPage from "./LoginPage.jsx";
-import SelectCategory from "./SelectCategory.jsx";
-import './index.css';
+import LoginPage from "./screens/LoginPage.jsx";
+import SelectCategory from "./screens/SelectCategory.jsx";
+import NotesPage from "./screens/NotesPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -13,6 +13,10 @@ const router = createBrowserRouter([
   {
     path: "/selectcategory",
     element: <SelectCategory />,
+  },
+  {
+    path: "/notespage",
+    element: <NotesPage />,
   },
 ]);
 

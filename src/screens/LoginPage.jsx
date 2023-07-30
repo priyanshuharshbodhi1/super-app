@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "./css/LoginPage.css";
-import LoginImage from "./assets/images/login.svg";
+import "../css/LoginPage.css";
+import LoginImage from "../assets/images/login.svg";
 import { useNavigate } from "react-router-dom";
 
 function LoginPage() {

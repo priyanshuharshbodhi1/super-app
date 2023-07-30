@@ -1,16 +1,16 @@
 import React, { useState } from "react";
-import "./css/SelectCategory.css";
+import "../css/SelectCategory.css";
 import { useNavigate } from "react-router-dom";
-import image1 from "./assets/images/image 1.png";
-import image2 from "./assets/images/image 2.png";
-import image3 from "./assets/images/image 3.png";
-import image4 from "./assets/images/image 4.png";
-import image5 from "./assets/images/image 5.png";
-import image6 from "./assets/images/image 6.png";
-import image7 from "./assets/images/image 7.png";
-import image8 from "./assets/images/image 8.png";
-import image9 from "./assets/images/image 9.png";
-import min3 from "./assets/images/min3.svg";
+import image1 from "../assets/images/image 1.png";
+import image2 from "../assets/images/image 2.png";
+import image3 from "../assets/images/image 3.png";
+import image4 from "../assets/images/image 4.png";
+import image5 from "../assets/images/image 5.png";
+import image6 from "../assets/images/image 6.png";
+import image7 from "../assets/images/image 7.png";
+import image8 from "../assets/images/image 8.png";
+import image9 from "../assets/images/image 9.png";
+import min3 from "../assets/images/min3.svg";
 
 function SelectCategory() {
   const navigate = useNavigate();
