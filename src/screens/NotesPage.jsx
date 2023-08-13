@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../css/NotesPage.css";
+import WeatherComponent from "../components/notespage/weather";
 
 function NotesPage() {
   const [note, setNote] = useState("");
@@ -40,7 +41,7 @@ function NotesPage() {
             news
           </div>
           <div className="section" id="weather-section">
-            weather
+          <WeatherComponent />
           </div>
           <div className="section" id="timer-section">
             timer
