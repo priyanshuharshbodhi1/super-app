@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+@font-face {
+  font-family: "VT323";
+  src: url("../assets/fonts/VT323-Regular.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bigger-container {
+  padding: 1rem 2rem;
+}
+
+.title-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app-logo {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #2ce72f;
+  font-family: VT323, sans-serif;
+  font-size: 2.7rem;
+}
+
+.user-photo > img {
+  width: 50px;
+}
+
+.tagline {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2015rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 139.688%; 
+  letter-spacing: 0.038rem;
+}

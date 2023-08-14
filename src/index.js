@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import LoginPage from "./screens/LoginPage.jsx";
 import SelectCategory from "./screens/SelectCategory.jsx";
 import NotesPage from "./screens/NotesPage.jsx";
+import MoviesPage from "./screens/MoviesPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
   {
     path: "/notespage",
     element: <NotesPage />,
+  },
+  {
+    path: "/moviespage",
+    element: <MoviesPage />,
   },
 ]);
 

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../css/NotesPage.css";
 import WeatherComponent from "../components/notespage/weather";
+import { Link } from "react-router-dom";
 
 function NotesPage() {
   const [note, setNote] = useState("");
@@ -47,7 +48,9 @@ function NotesPage() {
             timer
           </div>
         </div>
-        <button>Browse</button>
+        <Link to="/moviespage">
+          <button>Browse</button>
+        </Link>
       </div>
     </>
   );

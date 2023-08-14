@@ -122,6 +122,7 @@ body {
             border: none;
             border-radius: 1.75rem;
             cursor: pointer;
+            width: -webkit-fill-available;
 
             transition: background-color 0.3s ease;
 
