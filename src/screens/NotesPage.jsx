@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "../css/NotesPage.css";
-import WeatherComponent from "../components/notespage/weather";
+import WeatherComponent from "../components/weather/weather";
 import { Link } from "react-router-dom";
+import NewsComponent from "../components/news/news";
 
 function NotesPage() {
   const [note, setNote] = useState("");
@@ -39,10 +40,10 @@ function NotesPage() {
             ></textarea>
           </div>
           <div className="section" id="news-section">
-            news
+            <NewsComponent />
           </div>
           <div className="section" id="weather-section">
-          <WeatherComponent />
+            <WeatherComponent />
           </div>
           <div className="section" id="timer-section">
             timer
