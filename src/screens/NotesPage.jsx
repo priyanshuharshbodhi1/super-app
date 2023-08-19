@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../css/NotesPage.css";
 import WeatherComponent from "../components/weather/weather";
 import { Link } from "react-router-dom";
+import ProfileComponent from "../components/profile/profile";
 import NewsComponent from "../components/news/news";
 
 function NotesPage() {
@@ -28,7 +29,7 @@ function NotesPage() {
       <div className="container">
         <div className="dashboard">
           <div className="section" id="profile-section">
-            profile page
+            <ProfileComponent />
           </div>
           <div className="section" id="notes-section">
             <h2>All Notes</h2>
