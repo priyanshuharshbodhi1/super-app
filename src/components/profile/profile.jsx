@@ -30,7 +30,7 @@ function Profile() {
       <div className={styles.details}>
         <div className={styles.name}>{name}</div>
         <div className={styles.email}>{email}</div>
-        <div className={styles.username}>{username}</div>
+        <div className={styles.username}>@{username}</div>
         <div className={styles.categoriesSelected}>
           {selectedCategories.map((category, index) => (
             <span key={index} className={styles.categorySpan}>{category}</span>

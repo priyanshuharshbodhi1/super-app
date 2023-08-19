@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  gap: 8px;
+  gap: 12px;
 }
 
 .image > img {
@@ -48,14 +48,13 @@
   border-radius: 1.3125rem;
   display: flex;
   flex-wrap: wrap;
-  margin-top: auto;
-  margin-bottom: 1rem;
+  margin-top: 1.5rem;
 }
 
 .categorySpan {
   display: inline-block;
   margin: 5px;
-  padding: 3px 14px;
+  padding: 3px 10px;
   background: #9f94ff;
-  border-radius: 10px;
+  border-radius: 15px;
 }

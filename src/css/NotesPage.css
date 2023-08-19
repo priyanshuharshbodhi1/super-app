@@ -76,7 +76,6 @@
   background-color: #f7f3f3;
   border-radius: 10px;
   min-width: 300px;
-  margin-right: 2rem;
 }
 .container .dashboard #weather-section {
   grid-column: 1/2;
