@@ -9,7 +9,7 @@
 
 body {
   background-color: #000000;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .login-page {
@@ -34,7 +34,7 @@ body {
   color: aliceblue;
   top: 70%;
   left: 7%;
-  color: #FFF;
+  color: #fff;
   font-family: Roboto;
   font-size: 3rem;
   font-style: normal;
@@ -64,11 +64,11 @@ body {
 .login-page .form-container form h4 {
   text-align: center;
   margin-bottom: 3.5rem;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 1.5rem;
 }
 .login-page .form-container form input {
-  margin-bottom: 1rem;
+  margin-top: 0.9rem;
   padding: 10px;
   border: none;
   border-radius: 4px;
@@ -76,10 +76,14 @@ body {
   color: #c2c1c1;
   font-size: 0.9rem;
 }
+.login-page .form-container form .error-field {
+  border: 1px solid red;
+}
 .login-page .form-container form label {
   color: rgb(252, 75, 75);
-  margin-bottom: 1rem;
-  font-size: 0.9rem;
+  margin-top: 0.1rem;
+  margin-left: 0.3rem;
+  font-size: 0.8rem;
 }
 .login-page .form-container form .checkbox-container {
   margin-bottom: 10px;
@@ -91,7 +95,7 @@ body {
   border: 1rem solid red;
 }
 .login-page .form-container form .checkbox-container label {
-  color: #7C7C7C;
+  color: #7c7c7c;
 }
 .login-page .form-container form button {
   padding: 10px 20px;
@@ -115,12 +119,16 @@ body {
 }
 .login-page .form-container .terms-privacy-container p {
   margin-bottom: 1rem;
-  color: #7C7C7C;
+  color: #7c7c7c;
 }
 .login-page .form-container .terms-privacy-container a {
-  color: #72DB73;
+  color: #72db73;
 }
 
 a {
   text-decoration: none;
+}
+
+.error-field {
+  border: 1px solid red;
 }/*# sourceMappingURL=LoginPage.css.map */

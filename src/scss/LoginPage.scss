@@ -1,158 +1,163 @@
 // import LoginImage from "./images/login.svg";
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 @font-face {
-  font-family: 'VT323';
-  src: url('../assets/fonts/VT323-Regular.ttf') format('truetype')
+  font-family: "VT323";
+  src: url("../assets/fonts/VT323-Regular.ttf") format("truetype");
 }
 
-*{
-    margin: 0;
-
-  }
+* {
+  margin: 0;
+}
 
 body {
-     background-color: #000000;
-     color: #FFFFFF;
+  background-color: #000000;
+  color: #ffffff;
 }
-  
+
 .login-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #000000;
+
+  .image-container {
+    flex: 1;
+    position: relative;
+
+    img {
+      position: relative;
+      max-width: 100%;
+      min-width: 25rem;
+      object-fit: cover;
+    }
+
+    p {
+      position: absolute;
+      color: aliceblue;
+      top: 70%;
+      left: 7%;
+      color: #fff;
+      font-family: Roboto;
+      font-size: 3rem;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 3.2705rem;
+      letter-spacing: 0.06875rem;
+    }
+  }
+
+  .form-container {
+    flex: 1;
+    background-color: #000000;
+
+    form {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
+      flex-direction: column;
+      max-width: 20rem;
+      margin-left: auto;
+      margin-right: auto;
       background-color: #000000;
 
-      .image-container {
-        flex: 1;
-        position: relative;
-    
-        img {
-          position: relative;
-          max-width: 100%;
-          min-width: 25rem;
-          object-fit: cover;
+      h1 {
+        text-align: center;
+        margin-bottom: 1rem;
+        color: #2ce72f;
+        font-family: VT323, sans-serif;
+        font-size: 3.5rem;
+      }
+
+      h4 {
+        text-align: center;
+        margin-bottom: 3.5rem;
+        color: #ffffff;
+        font-size: 1.5rem;
+      }
+
+      input {
+        margin-top: .9rem;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        background-color: #464545;
+        color: #c2c1c1;
+        font-size: 0.9rem;
+      }
+
+      .error-field {
+        border: 1px solid red;
+      }
+
+      // input:invalid {
+      //   border: 2px solid red;
+
+      // }
+
+      label {
+        color: rgb(252, 75, 75);
+        margin-top: .1rem;
+        margin-left: .3rem;
+        font-size: 0.8rem;
+      }
+
+      .checkbox-container {
+        margin-bottom: 10px;
+
+        input[type="checkbox"] {
+          margin-right: 0.5rem;
         }
-        
-        p{
-          position: absolute;
-          color: aliceblue;
-          top: 70%;
-          left: 7%;
-          color: #FFF;
-          font-family: Roboto;
-          font-size: 3.0rem;
-          font-style: normal;
-          font-weight: 900;
-          line-height: 3.2705rem;
-          letter-spacing: 0.06875rem;
+
+        input[type="checkbox"]:not(:checked) {
+          border: 1rem solid red;
+        }
+
+        label {
+          color: #7c7c7c;
         }
       }
-    
-      .form-container {
-        flex: 1;
-        background-color: #000000;
-    
-        form {
-          display: flex;
-          flex-direction: column;
-          max-width: 20rem;
-          margin-left: auto;
-          margin-right: auto;
-          background-color: #000000;
 
-          h1 {
-            text-align: center;
-            margin-bottom: 1rem;
-            color: #2ce72f;;
-            font-family: VT323, sans-serif;
-            font-size: 3.5rem;
-          }
+      button {
+        padding: 10px 20px;
+        background-color: #2ce72f;
+        color: white;
+        border: none;
+        border-radius: 1.75rem;
+        cursor: pointer;
+        width: -webkit-fill-available;
 
-          h4 {
-            text-align: center;
-            margin-bottom: 3.5rem;
-            color: #FFFFFF;
-            font-size: 1.5rem;
-          }
-    
-          input {
-            margin-bottom: 1rem;
-            padding: 10px;
-            border: none;
-            border-radius: 4px;
-            background-color: #464545;
-            color: #c2c1c1;
-            font-size: .9rem;
-          }
+        transition: background-color 0.3s ease;
 
-          // input:invalid {
-          //   border: 2px solid red;
-            
-          // }
-
-          label {
-            color: rgb(252, 75, 75);
-            margin-bottom: 1rem;
-            font-size: .9rem;
-          }
-    
-          .checkbox-container {
-            margin-bottom: 10px;
-    
-            input[type="checkbox"] {
-              margin-right: .5rem;
-            }
-
-            input[type="checkbox"]:not(:checked) {
-              border: 1rem solid red;
-            }
-            
-           
-            label {
-                color: #7C7C7C;
-            }
-
-          }
-    
-          button {
-            padding: 10px 20px;
-            background-color: #2ce72f;
-            color: white;
-            border: none;
-            border-radius: 1.75rem;
-            cursor: pointer;
-            width: -webkit-fill-available;
-
-            transition: background-color 0.3s ease;
-
-            &:active {
-              transform: scale(0.98);
-            }
-
-            &:hover {
-              background-color: #4dac4d;
-            }
-          }
+        &:active {
+          transform: scale(0.98);
         }
-    
-        .terms-privacy-container {
-          margin-top: 20px;
-          font-size: 14px;
 
-          p {
-            margin-bottom: 1rem;
-            color: #7C7C7C;
-          }
-    
-          a {
-            color: #72DB73;
-            
-          }
+        &:hover {
+          background-color: #4dac4d;
         }
       }
     }
-    
-    a {
-        text-decoration: none;
+
+    .terms-privacy-container {
+      margin-top: 20px;
+      font-size: 14px;
+
+      p {
+        margin-bottom: 1rem;
+        color: #7c7c7c;
+      }
+
+      a {
+        color: #72db73;
+      }
     }
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.error-field {
+  border: 1px solid red;
+}
