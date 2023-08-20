@@ -3,7 +3,6 @@ import styles from "./timer.module.css";
 import up from "../../assets/images/up.png";
 import down from "../../assets/images/down.png";
 import countdownbackground from "../../assets/images/countdownbackground.png";
-import { CountdownCircleTimer } from "react-countdown-circle-timer";
 
 function Timer() {
   const [hours, setHours] = useState(0);
@@ -73,57 +72,28 @@ function Timer() {
           background: `url(${countdownbackground})`,
           backgroundSize: "cover",
           width: "190px",
-          height: "200px",
-          borderRadius: "50%",
-          position: "relative",
+          height: "190px",
+          display: "flex",
+          flexDirection: "column",
         }}
       >
-        {(running || countdownHours > 0 || countdownMinutes > 0 || countdownSeconds > 0) && (
-          <CountdownCircleTimer
-            isPlaying
-            duration={
-              countdownHours * 3600 + countdownMinutes * 60 + countdownSeconds
-            }
-            colors={["#FF6A6A"]}
-            size={160}
-            strokeWidth={6}
-            onComplete={() => {
-              setRunning(false);
-              return [false, 0];
-            }}
-            className={styles.countdownCircleTimer}
-            style={{
-                marginLeft:"15px",
-              }}
-          >
-            {({ remainingTime }) => (
-              <div
-                className={styles.countdownText}
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  position: "absolute",
-                  width: "90%",
-                  height: "90%",
-                  textAlign: "center",
-                }}
-              >
-                <div className={styles.countdownNumbers}>
-                  {countdownHours < 10 ? "0" + countdownHours : countdownHours}{" "}
-                  :{" "}
-                  {countdownMinutes < 10
-                    ? "0" + countdownMinutes
-                    : countdownMinutes}{" "}
-                  :{" "}
-                  {countdownSeconds < 10
-                    ? "0" + countdownSeconds
-                    : countdownSeconds}
-                </div>
-              </div>
-            )}
-          </CountdownCircleTimer>
-        )}
+        <div
+          className={styles.timerText}
+          style={{
+            textAlign: "center",
+            fontSize: "1.5rem",
+            fontWeight: "bold",
+            paddingTop: "10px",
+            marginBottom: "10px",
+          }}
+        >
+          Timer
+        </div>
+        <div style={{marginBottom:"30px"}}>
+          {countdownHours < 10 ? "0" + countdownHours : countdownHours} :{" "}
+          {countdownMinutes < 10 ? "0" + countdownMinutes : countdownMinutes} :{" "}
+          {countdownSeconds < 10 ? "0" + countdownSeconds : countdownSeconds}
+        </div>
       </div>
       <div className={styles.timerSetter}>
         <div
