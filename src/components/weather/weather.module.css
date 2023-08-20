@@ -1,0 +1,63 @@
+.container {
+   display: flex;
+   flex-direction: column;
+   font-family: Roboto;
+}
+
+.dateAndTime {
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 1.1875rem 1.1875rem 0rem 0rem;
+    background: #FF4ADE;
+}
+
+.date , .time {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 141.688%;
+    letter-spacing: 0.04125rem;
+}
+
+.weatherContainer {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.weatherCondition , .weatherInfo, .weatherInfo2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.8rem;
+    gap: 12px;
+}
+
+.weatherCondition > img {
+    width: 4rem;
+    margin-top: -1rem;
+
+}
+
+.pressureIcon,  .humidityIcon {
+    width: 11px;
+}
+
+.temperature {
+    font-size: 1.8rem;
+}
+
+.info {
+    font-size: .8rem;
+    
+}
+
+img {
+    position: relative;
+}
+
+.iconMargin {
+    margin-right: 8px; 
+  }
+  

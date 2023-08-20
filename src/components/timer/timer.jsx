@@ -3,6 +3,7 @@ import styles from "./timer.module.css";
 import up from "../../assets/images/up.png";
 import down from "../../assets/images/down.png";
 import countdownbackground from "../../assets/images/countdownbackground.png";
+import timerend from "../../assets/sounds/timerend.mp3"
 
 function Timer() {
   const [hours, setHours] = useState(0);
@@ -42,6 +43,7 @@ function Timer() {
         ) {
           clearInterval(interval);
           setRunning(false);
+          new Audio(timerend).play(); 
         } else {
           if (countdownSeconds > 0) {
             setCountdownSeconds(countdownSeconds - 1);
@@ -85,11 +87,13 @@ function Timer() {
             fontWeight: "bold",
             paddingTop: "10px",
             marginBottom: "10px",
+            marginLeft: "7px",
           }}
         >
           Timer
         </div>
-        <div style={{marginBottom:"30px"}}>
+            
+        <div style={{marginBottom:"40px",marginLeft: "7px",  }}>
           {countdownHours < 10 ? "0" + countdownHours : countdownHours} :{" "}
           {countdownMinutes < 10 ? "0" + countdownMinutes : countdownMinutes} :{" "}
           {countdownSeconds < 10 ? "0" + countdownSeconds : countdownSeconds}
