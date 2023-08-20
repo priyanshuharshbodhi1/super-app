@@ -4,6 +4,7 @@ import WeatherComponent from "../components/weather/weather";
 import { Link } from "react-router-dom";
 import ProfileComponent from "../components/profile/profile";
 import NewsComponent from "../components/news/news";
+import TimerComponent from "../components/timer/timer";
 
 function NotesPage() {
   const [note, setNote] = useState("");
@@ -47,7 +48,7 @@ function NotesPage() {
             <WeatherComponent />
           </div>
           <div className="section" id="timer-section">
-            timer
+            <TimerComponent />
           </div>
         </div>
         <Link to="/moviespage">
