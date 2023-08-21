@@ -39,6 +39,7 @@ function NotesPage() {
               className="writehere"
               value={note}
               onChange={handleNoteChange}
+              placeholder="Write a Note here..."
             ></textarea>
           </div>
           <div className="section" id="news-section">

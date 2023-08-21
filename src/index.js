@@ -6,6 +6,7 @@ import SelectCategory from "./screens/SelectCategory.jsx";
 import NotesPage from "./screens/NotesPage.jsx";
 import MoviesPage from "./screens/MoviesPage.jsx";
 
+
 const router = createBrowserRouter([
   {
     path: "/",

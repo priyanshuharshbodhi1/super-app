@@ -59,7 +59,7 @@ const Weather = () => {
           <div className={styles.weatherInfo}>
             <p className={styles.temperature}>
               {weatherData.current.temp_c}{" "}
-              <span className={styles.temperatureUnit}>C</span>
+              <span className={styles.temperatureUnit}>&#176;C</span>
             </p>
             <p className={styles.info}>
             <img
