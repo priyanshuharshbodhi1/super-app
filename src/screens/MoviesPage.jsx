@@ -4,7 +4,7 @@ import userImage from "../assets/images/userimage.png";
 import styles from "../css/MoviesPage.module.css";
 
 function MoviesPage() {
-  const apiKey = "da07e48e477dc90d013a12f9e91c8d3a"; 
+  const apiKey = "da07e48e477dc90d013a12f9e91c8d3a";
   const selectedCategories =
     JSON.parse(localStorage.getItem("selectedCategories")) || [];
 
@@ -46,7 +46,6 @@ function MoviesPage() {
       Fantasy: 14,
       Music: 10402,
       Fiction: 878,
-      
     };
 
     return genreIdMap[category];
@@ -62,8 +61,10 @@ function MoviesPage() {
           </Link>
         </div>
       </div>
-      <div className={styles.tagLine}>Entertainment according to your choice</div>
-      <div className="movies-container">
+      <div className={styles.tagLine}>
+        Entertainment according to your choice
+      </div>
+      <div className={styles.movieContainer}>
         {movieData.map((movies, index) => (
           <div key={index} className={styles.movieCategory}>
             <h2 className={styles.categoryName}>{selectedCategories[index]}</h2>

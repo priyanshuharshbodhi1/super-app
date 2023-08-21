@@ -33,7 +33,7 @@
 .movieCategory {
   margin-top: 1rem;
   padding-left: 2rem;
-  padding-right:4rem;
+  padding-right: 4rem;
 }
 
 .categoryName {
@@ -42,7 +42,7 @@
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 139.688%; 
+  line-height: 139.688%;
   letter-spacing: 0.0375rem;
   margin-bottom: 1rem;
 }
@@ -51,13 +51,60 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 1rem;
 }
 
 .movieImage > img {
-    width: 10rem;
-    height: auto;
-    border: 2px solid #72DB73;
-    border-radius: 9px;
-    box-shadow: rgba(25, 213, 25, 0.25) 0px 6px 12px -2px, rgba(18, 150, 31, 0.3) 0px 3px 7px -3px;
+  width: 10rem;
+  height: auto;
+  border: 2px solid #72db73;
+  border-radius: 9px;
+  box-shadow: rgba(25, 213, 25, 0.25) 0px 6px 12px -2px,
+    rgba(18, 150, 31, 0.3) 0px 3px 7px -3px;
 }
 
+@media (max-width: 750px) {
+  .biggerContainer {
+    padding: 1rem;
+  }
+  .appLogo {
+    font-size: 3rem;
+  }
+
+  .tagLine {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.038rem;
+    margin-left: 0.3rem;
+  }
+
+  .userPhoto img {
+    width: 50px !important;
+  }
+
+  .movieContainer {
+    margin-top: 1rem;
+  }
+
+  .movieCategory {
+    margin: 0 0.5rem;
+    padding: 0;
+  }
+
+  .movieList {
+    justify-content: space-between;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .categoryName {
+    margin-top: 1rem;
+  }
+
+  .movieImage > img {
+    width: 7rem;
+  }
+}
