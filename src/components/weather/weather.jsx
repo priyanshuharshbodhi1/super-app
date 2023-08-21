@@ -11,7 +11,7 @@ const Weather = () => {
   useEffect(() => {
     // Replace with your API call
     fetch(
-      "http://api.weatherapi.com/v1/current.json?key=bc0e27ed2e4e4bf3812162314232008&q=new%20delhi&aqi=no"
+      "https://api.weatherapi.com/v1/current.json?key=bc0e27ed2e4e4bf3812162314232008&q=new%20delhi&aqi=no"
     )
       .then((response) => response.json())
       .then((data) => {

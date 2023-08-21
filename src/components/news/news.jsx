@@ -12,7 +12,7 @@ function News() {
       .then((response) => response.json())
       .then((data) => {
         // Take the first article from the API response
-        const firstArticle = data.articles[8];
+        const firstArticle = data.articles[0];
         setNewsData(firstArticle);
       })
       .catch((error) => {
