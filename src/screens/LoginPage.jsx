@@ -49,7 +49,7 @@ function LoginPage() {
     <>
       <div className="login-page">
         <div className="image-container">
-          <img src={LoginImage} alt="" />
+          <img src={LoginImage} alt="" className="background-image"/>
           <p>Discover new things on Superapp</p>
         </div>
         <div className="form-container">

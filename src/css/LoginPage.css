@@ -22,12 +22,15 @@ body {
 .login-page .image-container {
   flex: 1;
   position: relative;
+  width: 100%;
+  height: 100%;
 }
 .login-page .image-container img {
   position: relative;
-  max-width: 100%;
   min-width: 25rem;
   object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 .login-page .image-container p {
   position: absolute;
@@ -127,4 +130,10 @@ body {
 
 a {
   text-decoration: none;
+}
+
+@media (max-width: 780px) {
+  .image-container {
+    display: none;
+  }
 }/*# sourceMappingURL=LoginPage.css.map */
