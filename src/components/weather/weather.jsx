@@ -62,11 +62,11 @@ const Weather = () => {
               <span className={styles.temperatureUnit}>&#176;C</span>
             </p>
             <p className={styles.info}>
-            <img
-              src={pressure}
-              alt=""
-              className={`${styles.pressureIcon} ${styles.iconMargin}`}
-            />
+              <img
+                src={pressure}
+                alt=""
+                className={`${styles.pressureIcon} ${styles.iconMargin}`}
+              />
               Pressure <br />
               {weatherData.current.pressure_mb} mb
             </p>
@@ -74,21 +74,21 @@ const Weather = () => {
           <hr />
           <div className={styles.weatherInfo2}>
             <p className={styles.info}>
-            <img
-              src={wind}
-              alt=""
-              className={`${styles.windIcon} ${styles.iconMargin}`}
-            />
+              <img
+                src={wind}
+                alt=""
+                className={`${styles.windIcon} ${styles.iconMargin}`}
+              />
               {weatherData.current.wind_kph} kph
               <br />
               Wind
             </p>
             <p className={styles.info}>
-            <img
-              src={humidity}
-              alt=""
-              className={`${styles.humidityIcon} ${styles.iconMargin}`}
-            />
+              <img
+                src={humidity}
+                alt=""
+                className={`${styles.humidityIcon} ${styles.iconMargin}`}
+              />
               {weatherData.current.humidity}% <br />
               Humidity
             </p>

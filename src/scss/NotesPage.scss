@@ -6,14 +6,18 @@
   flex-direction: column;
   gap: 1rem;
   padding-bottom: 0.7rem;
+  width: fit-content;
 
   .dashboard {
     display: inline-grid;
-    grid-template-columns: repeat(3, 1fr);//repeat(auto-fit, minmax(270px, 1fr))
+    grid-template-columns: repeat(
+      3,
+      1fr
+    ); //repeat(auto-fit, minmax(270px, 1fr))
     grid-template-rows: repeat(5, 1fr);
     column-gap: 2rem;
     row-gap: 1.2rem;
-    height: 100vh;
+    height: 120vh;
     width: 100%;
 
     #profile-section {
@@ -22,7 +26,8 @@
       background-color: #5746ea;
       border-radius: 10px;
       padding: 1rem;
-      min-width: 300px;
+      min-width: 270px;
+      height: max-content;
     }
 
     #notes-section {
@@ -34,7 +39,7 @@
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
-      min-width: 300px;
+      // min-width: 300px;
 
       h2 {
         color: #000;
@@ -58,22 +63,22 @@
         outline: none;
 
         &:active {
-          border: red; 
+          border: red;
         }
 
         &::-webkit-scrollbar {
           width: 0.6rem;
         }
-    
+
         &::-webkit-scrollbar-thumb {
           background-color: #fcde94;
           border-radius: 4px;
         }
-    
+
         &::-webkit-scrollbar-thumb:hover {
           background-color: #fddc87;
         }
-    
+
         &::-webkit-scrollbar-track {
           background-color: inherit;
         }
@@ -93,7 +98,7 @@
       grid-row: 3/4;
       background-color: #101744;
       border-radius: 10px;
-      min-height: 9rem ;
+      // min-height: 11rem ;
     }
 
     #timer-section {
@@ -102,6 +107,7 @@
       background-color: #1e2343;
       border-radius: 10px;
       padding: 1rem;
+      height: max-content;
     }
   }
 
@@ -131,9 +137,26 @@
 }
 
 textarea:active {
-  border: none; 
+  border: none;
 }
 
 a {
   margin-left: auto;
+}
+
+@media (max-width: 550px) {
+  .container {
+    padding: 1rem;
+    width: auto;
+
+    .dashboard {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+
+      #notes-section {
+        height: 15rem;
+      }
+    }
+  }
 }

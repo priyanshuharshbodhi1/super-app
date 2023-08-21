@@ -59,8 +59,8 @@
   height: auto;
   border: 2px solid #72db73;
   border-radius: 9px;
-  box-shadow: rgba(25, 213, 25, 0.25) 0px 6px 12px -2px,
-    rgba(18, 150, 31, 0.3) 0px 3px 7px -3px;
+  box-shadow: rgba(4, 253, 4, 0.25) 0px 6px 12px -2px,
+    rgba(4, 220, 26, 0.3) 0px 3px 7px -3px;
 }
 
 @media (max-width: 750px) {
@@ -106,5 +106,6 @@
 
   .movieImage > img {
     width: 7rem;
+    height: auto;
   }
 }

@@ -1,63 +1,74 @@
 .container {
-   display: flex;
-   flex-direction: column;
-   font-family: Roboto;
+  display: flex;
+  flex-direction: column;
+  font-family: Roboto;
 }
 
 .dateAndTime {
-    display: flex;
-    justify-content: space-evenly;
-    border-radius: 1.1875rem 1.1875rem 0rem 0rem;
-    background: #FF4ADE;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 1.1875rem 1.1875rem 0rem 0rem;
+  background: #ff4ade;
 }
 
-.date , .time {
-    color: #FFF;
-    font-family: Roboto;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 141.688%;
-    letter-spacing: 0.04125rem;
+.date,
+.time {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 141.688%;
+  letter-spacing: 0.04125rem;
 }
 
 .weatherContainer {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  font-size: 0.8rem;
 }
 
-.weatherCondition , .weatherInfo, .weatherInfo2 {
-    display: flex;
-    flex-direction: column;
-    margin-top: 0.8rem;
-    gap: 12px;
+.weatherCondition,
+.weatherInfo,
+.weatherInfo2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.8rem;
+  gap: 12px;
+  flex: 1;
+  flex-basis: 0;
+}
+
+.weatherCondition {
 }
 
 .weatherCondition > img {
-    width: 4rem;
-    margin-top: -1rem;
-
+  width: 4rem;
+  margin-top: -0.5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.pressureIcon,  .humidityIcon {
-    width: 11px;
+.pressureIcon,
+.humidityIcon {
+  width: 11px;
 }
 
 .temperature {
-    font-size: 1.8rem;
+  font-size: 1.8rem;
 }
 
 .info {
-    font-size: .8rem;
-    
+  font-size: 0.8rem;
 }
 
 img {
-    position: relative;
+  position: relative;
 }
 
 .iconMargin {
-    margin-right: 8px; 
-  }
-  
+  margin-right: 8px;
+}

@@ -18,7 +18,7 @@ function MoviesPage() {
 
         return fetch(apiUrl)
           .then((response) => response.json())
-          .then((data) => data.results.slice(4, 9))
+          .then((data) => data.results.slice(9, 14))
           .catch((error) => {
             console.error("Error fetching movie data:", error);
             return [];
