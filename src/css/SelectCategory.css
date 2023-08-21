@@ -8,7 +8,6 @@
 .select-category {
   display: flex;
   justify-content: center;
-  height: 100vh;
   margin: 2rem;
   gap: 5rem;
 }
@@ -148,4 +147,25 @@ button:active {
 }
 button:hover {
   background-color: #4dac4d;
+}
+
+@media (max-width: 800px) {
+  .select-category {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .select-category .category-selected {
+    width: 100%;
+  }
+  .select-category .category-selected p {
+    font-size: 1.4rem;
+    line-height: normal;
+  }
+  .select-category .category-cards {
+    width: 100%;
+  }
+  .select-category .category-cards .grid-container {
+    grid-template-columns: 130px 130px;
+    justify-content: space-evenly;
+  }
 }/*# sourceMappingURL=SelectCategory.css.map */
