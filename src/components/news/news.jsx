@@ -17,6 +17,7 @@ function News() {
       })
       .catch((error) => {
         console.error("Error fetching news data:", error);
+        console.error("API Response:", error.response);
       });
   }, []);
 
